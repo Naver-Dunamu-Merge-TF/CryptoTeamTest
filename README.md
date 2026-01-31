@@ -3,11 +3,11 @@
 이 프로젝트는 **Naver Stable Coin (NSC)**을 이용한 차세대 결제 시스템의 프로토타입 데모입니다.  
 사용자 잔액을 **동결(Freeze)**하고 결제가 확정되면 **정산(Settle)**하는 2단계 결제 로직을 구현하였습니다.
 
-## 🏗️ 아키텍처 (Architecture)
+## 아키텍처 (Architecture)
 
 이 프로젝트는 **FastAPI (Backend)**와 **React + Vite (Frontend)**로 구성된 Full-Stack 애플리케이션입니다.
 
-### 🔙 Backend (Python/FastAPI)
+###  Backend (Python/FastAPI)
 - **Framework**: FastAPI (비동기 지원)
 - **Database**: SQLite (SQLAlchemy 비동기 세션 사용 2.0+)
 - **핵심 로직**:
@@ -15,7 +15,7 @@
   - `PaymentOrder`: 결제 주문 상태 관리 (READY -> COMPLETED/CANCELED)
   - `TransactionLedger`: 모든 거래 내역 기록 (불변 원장)
 
-### 🎨 Frontend (React/Vite)
+###  Frontend (React/Vite)
 - **Framework**: React 19
 - **Build Tool**: Vite
 - **Styling**: Vanilla CSS (네이버 파이낸셜 스타일)
@@ -82,6 +82,8 @@ CryptoSection/
 │   └── naver_finance.db # SQLite 데이터베이스 파일
 │
 └── frontend/
+    ├── public/          # 정적 파일 보관 (빌드 시 루트로 그대로 복사됨, 예: favicon)
+    ├── node_modules/    # 설치된 라이브러리 저장소 (Git 제외, 자동 생성됨)
     ├── src/
     │   ├── components/  # React 컴포넌트 (WalletView, PaymentDemo, AdminDashboard)
     │   ├── App.jsx      # 메인 라우팅 설정
