@@ -70,7 +70,7 @@ npm run dev
 
 ---
 
-## 📂 프로젝트 구조 (Project Structure)
+## 📂 파일 디렉토리 구조 (File Directory Structure)
 
 ```
 CryptoSection/
