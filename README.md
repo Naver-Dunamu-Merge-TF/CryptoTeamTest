@@ -2,7 +2,7 @@
 이 프로젝트는 **Naver Stable Coin (NSC)**을 이용한 차세대 결제 시스템의 프로토타입 데모입니다.  
 사용자 잔액을 **동결(Freeze)**하고 결제가 확정되면 **정산(Settle)**하는 2단계 결제 로직을 구현하였습니다.
 
-## 🟦 아키텍처 (Architecture)
+## 🟦 시스템 아키텍처 (Architecture)
 
 이 프로젝트는 **FastAPI (Backend)**와 **React + Vite (Frontend)**로 구성된 Full-Stack 애플리케이션입니다.
 
@@ -22,7 +22,7 @@
 
 ---
 
-## 🟦 주요 기능 (Features)
+## 🟦 핵심 기능 (Key Features)
 
 1.  **내 지갑 (Wallet)**
     - 현재 잔액 및 동결 금액 확인
@@ -38,7 +38,7 @@
 
 ---
 
-## 🟦 설치 및 실행 방법 (Setup & Run)
+## 🟦 환경 구축 및 실행 (Setup Guide)
 
 터미널 2개를 열어서 각각 실행해야 합니다.
 
